@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do-list</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+</head>
+<body>
+    <section class="main-container">
+        <div class="head-container flex-align">
+            <img src="./logo.svg"></img>
+        </div>
+        <form id="input-form" class="input-form flex-align">
+            <input id="input-text"type="text" name="task" required placeholder="Enter your To-do List task">
+            <button id="add-button" type="submit">Add</button>
+        </form>
+        <section class="body-container">
+            <div class= "category flex-align">
+                <div class="category-iteam">
+                    <div class="heading flex-align">
+                        <div class="flex-align">
+                            <h1 style="color: #4EA8DE;">To-do list</h1>
+                            <div class="count"id="task-count">0</div>
+                        </div>
+                        <div class="flex-align">
+                            <h1 style="color:#8284FA;">High Priority</h1>
+                            <div class="count" id="high-count">0 of 0</div>
+                        </div>
+                    </div>
+                    <div id="to-do" class="task-container">
+
+                    </div>
+                </div>             
+                <div class="category-iteam">
+                    <div class="heading flex-align">
+                        <div class="flex-align">
+                            <h1 style="color: #4EA8DE;">Started</h1>
+                            <div class="count" id="st-tsk-cnt">0</div>
+                        </div>
+                        <div class="flex-align">
+                            <h1 style="color:#8284FA;">High Priority</h1>
+                            <div class="count" id="st-hi-cnt">0 of 0</div>
+                        </div>
+                    </div>
+                    <div id="started" class="task-container"></div>
+                </div>
+                <div class="category-iteam ">
+                    <div class="heading flex-align">
+                        <div class="flex-align">
+                            <h1 style="color: #4EA8DE;">Completed</h1>
+                            <div class="count" id="com-tsk-cnt">0</div>
+                        </div>
+                        <div class="flex-align">
+                            <h1 style="color:#8284FA;">High Priority</h1>
+                            <div class="count" id="com-hi-cnt">0 of 0</div>
+                        </div>
+                    </div>
+                    <div id="completed"class="task-container"></div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <script src="./script.js"></script>
+    <script src="./drag_drop.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
